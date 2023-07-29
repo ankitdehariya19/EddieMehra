@@ -1,0 +1,58 @@
+
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  margin: 0 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  padding: 14px 32px;
+  background: #000;
+  color: #f0eaea;
+  font-size: 20px;
+  text-transform: uppercase;
+  z-index: 0;
+}
+
+.btn:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -10px;
+  left: -10px;
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+  transition: all 0.5s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: -10px;
+  right: -10px;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+  transition: all 0.5s;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+/* Dark mode styles */
+.btn.dark-mode {
+  background: #f0eaea;
+  color: #000;
+}
+
+.btn.dark-mode:before,
+.btn.dark-mode:after {
+  border-color: #f0eaea;
+}

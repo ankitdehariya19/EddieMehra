@@ -40,10 +40,9 @@ const Home = ({ darkMode, toggleDarkMode }) => {
             Next.js, and GitHub. I'm excited to showcase my portfolio website,
             where you can explore my projects, skills, and experiences.
           </p>
-          <div className='py-4'>
-            {/* Use the Button component with custom styles here */}
-            <Button text="Portfolio" darkMode={darkMode} />
-          </div>
+            <Link to="portfolio" smooth={true} duration={500} offset={-70}>
+              <Button text="Portfolio" darkMode={darkMode} />
+            </Link>
         </div>
         <div>
           <img src={heroImg} alt='my profile' className='rounded-2xl mx-auto w-2/3 md:w-3/5'></img>

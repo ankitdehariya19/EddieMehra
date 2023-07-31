@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import ParticlesBg from 'particles-bg';
 import heroImg from '../assets/hero.jpg';
 import Button from './Button';
+import { Link } from 'react-scroll';
+
+
 
 const Home = ({ darkMode, toggleDarkMode }) => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
@@ -40,18 +43,18 @@ const Home = ({ darkMode, toggleDarkMode }) => {
             Next.js, and GitHub. I'm excited to showcase my portfolio website,
             where you can explore my projects, skills, and experiences.
           </p>
-            <Link to="portfolio" smooth={true} duration={500} offset={-70}>
-              <Button text="Portfolio" darkMode={darkMode} />
-            </Link>
+          <Link to="portfolio" smooth={true} duration={500} offset={-70}>
+            <Button text="Portfolio" darkMode={darkMode} />
+          </Link>
+
         </div>
         <div>
           <img src={heroImg} alt='my profile' className='rounded-2xl mx-auto w-2/3 md:w-3/5'></img>
         </div>
       </div>
       <button
-        className={`fixed bottom-4 right-4 text-sm ${
-          darkMode ? 'bg-white text-gray-800' : 'bg-black text-white'
-        } px-3 py-1 rounded-md`}
+        className={`fixed bottom-4 right-4 text-sm ${darkMode ? 'bg-white text-gray-800' : 'bg-black text-white'
+          } px-3 py-1 rounded-md`}
         onClick={toggleDarkMode}
       >
         {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}

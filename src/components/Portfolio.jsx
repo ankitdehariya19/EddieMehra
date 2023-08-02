@@ -11,32 +11,50 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
     {
       id: 1,
       src: arrayDestruct,
+      demoLink: 'https://example.com/portfolio-item-1', // Add your demo URL here
+      codeLink: 'https://github.com/your-username/repo-1', // Add your GitHub repo URL here
     },
     {
       id: 2,
       src: reactParallax,
+      demoLink: 'https://example.com/portfolio-item-2', // Add your demo URL here
+      codeLink: 'https://github.com/your-username/repo-2', // Add your GitHub repo URL here
     },
     {
       id: 3,
       src: navbar,
+      demoLink: 'https://example.com/portfolio-item-3', // Add your demo URL here
+      codeLink: 'https://github.com/your-username/repo-3', // Add your GitHub repo URL here
     },
     {
       id: 4,
       src: reactSmooth,
+      demoLink: 'https://example.com/portfolio-item-4', // Add your demo URL here
+      codeLink: 'https://github.com/your-username/repo-4', // Add your GitHub repo URL here
     },
     {
       id: 5,
       src: installNode,
+      demoLink: 'https://example.com/portfolio-item-5', // Add your demo URL here
+      codeLink: 'https://github.com/your-username/repo-5', // Add your GitHub repo URL here
     },
     {
       id: 6,
       src: reactWeather,
+      demoLink: 'https://example.com/portfolio-item-6', // Add your demo URL here
+      codeLink: 'https://github.com/your-username/repo-6', // Add your GitHub repo URL here
     },
     {
       id: 7, // Make sure to use unique IDs for each portfolio item
       src: arrayDestruct, // Use the correct file name for each image
+      demoLink: 'https://example.com/portfolio-item-7', // Add your demo URL here
+      codeLink: 'https://github.com/your-username/repo-7', // Add your GitHub repo URL here
     },
   ];
+
+  const openLinkInNewTab = (link) => {
+    window.open(link, '_blank');
+  };
 
   return (
     <div
@@ -46,7 +64,7 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
       }`}
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-      <div className="mt-40 mb-10">
+        <div className="mt-40 mb-10">
           <p
             className={`text-4xl font-bold border-b-4 ${
               darkMode ? 'border-white ' : 'border-gray-500 text-slate-800'
@@ -54,9 +72,13 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
           >
             Portfolio
           </p>
-          <p        className={` py-6 ${
+          <p
+            className={` py-6 ${
               darkMode ? 'text-white ' : ' text-slate-800'
-            } `}>These are the technologies I've worked with</p>
+            } `}
+          >
+            These are the technologies I've worked with
+          </p>
         </div>
 
         <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 md:px-0">
@@ -73,10 +95,20 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
               </div>
 
               <div className="flex items-center justify-center">
-                <button className={` w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+                <button
+                  className={`w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ${
+                    darkMode ? 'text-white' : 'text-gray-800'
+                  }`}
+                  onClick={() => openLinkInNewTab(portfolio.demoLink)}
+                >
                   Demo
                 </button>
-                <button className={` w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+                <button
+                  className={`w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ${
+                    darkMode ? 'text-white' : 'text-gray-800'
+                  }`}
+                  onClick={() => openLinkInNewTab(portfolio.codeLink)}
+                >
                   Code
                 </button>
               </div>

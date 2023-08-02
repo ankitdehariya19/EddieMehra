@@ -1,5 +1,4 @@
 import React from 'react';
-// import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGlobe } from 'react-icons/fa';
 import Button from './Button';
 import ContactMe from './ContactMe';
 import Input from './Input';
@@ -29,6 +28,7 @@ const Contact = ({ darkMode }) => {
             <form action="https://getform.io/f/3b8435ed-8cf4-43d5-a9ca-6672f3414117" method='POST' className="flex flex-col w-full md:w-96 lg:w-112">
               <Input
                 type="text"
+                required // Add the required attribute
                 name="name"
                 placeholder="Enter Your Name"
                 className={`p-2 bg-transparent border-2 rounded-md w-full ${
@@ -36,7 +36,8 @@ const Contact = ({ darkMode }) => {
                 } focus:outline-none`}
               />
               <EmailInput
-                type="text"
+                type="email" // Change the type to "email"
+                required // Add the required attribute
                 name="email"
                 placeholder="Enter Your Email"
                 className={`p-2 my-4 bg-transparent border-2 rounded-md w-full ${
@@ -45,13 +46,13 @@ const Contact = ({ darkMode }) => {
               />
               <Textarea
                 name="message"
+                required // Add the required attribute
                 rows="10"
                 className={`p-2 mb-8 bg-transparent border-2 rounded-md w-full ${
                   darkMode ? 'text-white border-white' : 'text-gray-800 border-gray-500'
                 } focus:outline-none`}
               ></Textarea>
-              {/* <Button text="let's talk" textColor="#000" bgColor="#f0f0f0" py="6" /> */}
-              <Button text="let's talk" py="6"  darkMode={darkMode} />
+              <Button text="let's talk" py="6" darkMode={darkMode} />
             </form>
           </div>
         </div>
@@ -61,6 +62,7 @@ const Contact = ({ darkMode }) => {
 };
 
 export default Contact;
+
 
 
 

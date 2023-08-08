@@ -7,7 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer"; // Import the Footer component
-import PortfolioTypes from './components/PortfolioTypes';
+// import PortfolioTypes from './components/PortfolioTypes';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -26,7 +26,7 @@ function App() {
       <Contact darkMode={darkMode} />
       <SocialLinks darkMode={darkMode} />
       <Footer darkMode={darkMode} /> {/* Add the Footer component */}
-      <PortfolioTypes/>
+      {/* <PortfolioTypes/> */}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
+import BookMyStay from '../assets/portfolio/BookMyStay.png';
 import reactParallax from '../assets/portfolio/reactParallax.jpg';
 import navbar from '../assets/portfolio/navbar.jpg';
 import reactSmooth from '../assets/portfolio/reactSmooth.jpg';
@@ -10,9 +10,9 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-      demoLink: 'https://example.com/portfolio-item-1', // Add your demo URL here
-      codeLink: 'https://github.com/your-username/repo-1', // Add your GitHub repo URL here
+      src: BookMyStay,
+      demoLink: 'https://bookmystay-neon.vercel.app/', // Add your demo URL here
+      codeLink: 'https://github.com/ankitdehariya19/BookMyStay', // Add your GitHub repo URL here
     },
     {
       id: 2,
@@ -44,12 +44,7 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
       demoLink: 'https://example.com/portfolio-item-6', // Add your demo URL here
       codeLink: 'https://github.com/your-username/repo-6', // Add your GitHub repo URL here
     },
-    {
-      id: 7, // Make sure to use unique IDs for each portfolio item
-      src: arrayDestruct, // Use the correct file name for each image
-      demoLink: 'https://example.com/portfolio-item-7', // Add your demo URL here
-      codeLink: 'https://github.com/your-username/repo-7', // Add your GitHub repo URL here
-    },
+
   ];
 
   const openLinkInNewTab = (link) => {

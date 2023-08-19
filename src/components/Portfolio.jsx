@@ -1,6 +1,6 @@
 import React from 'react';
 import BookMyStay from '../assets/portfolio/BookMyStay.png';
-import reactParallax from '../assets/portfolio/reactParallax.jpg';
+import DailyTasks from '../assets/portfolio/DailyTasks.png';
 import navbar from '../assets/portfolio/navbar.jpg';
 import reactSmooth from '../assets/portfolio/reactSmooth.jpg';
 import installNode from '../assets/portfolio/installNode.jpg';
@@ -16,15 +16,15 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
     },
     {
       id: 2,
-      src: reactParallax,
-      demoLink: 'https://example.com/portfolio-item-2', // Add your demo URL here
-      codeLink: 'https://github.com/your-username/repo-2', // Add your GitHub repo URL here
+      src: DailyTasks,
+      demoLink: 'https://daily-tasks-bay.vercel.app/', // Add your demo URL here
+      codeLink: 'https://github.com/ankitdehariya19/DailyTasks', // Add your GitHub repo URL here
     },
     {
       id: 3,
       src: navbar,
       demoLink: 'https://example.com/portfolio-item-3', // Add your demo URL here
-      codeLink: 'https://github.com/your-username/repo-3', // Add your GitHub repo URL here
+      codeLink: 'https://github.com/ankitdehariya19/education', // Add your GitHub repo URL here
     },
     {
       id: 4,

@@ -2,7 +2,7 @@ import React from 'react';
 import BookMyStay from '../assets/portfolio/BookMyStay.png';
 import DailyTasks from '../assets/portfolio/DailyTasks.png';
 import navbar from '../assets/portfolio/navbar.jpg';
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg';
+import InterviewQuestions from '../assets/portfolio/InterviewQuestions.png';
 import installNode from '../assets/portfolio/installNode.jpg';
 import reactWeather from '../assets/portfolio/reactWeather.jpg';
 
@@ -28,9 +28,9 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
     },
     {
       id: 4,
-      src: reactSmooth,
-      demoLink: 'https://example.com/portfolio-item-4', // Add your demo URL here
-      codeLink: 'https://github.com/your-username/repo-4', // Add your GitHub repo URL here
+      src: InterviewQuestions,
+      demoLink: 'https://interview-questions-seven.vercel.app/', // Add your demo URL here
+      codeLink: 'https://github.com/ankitdehariya19/InterviewQuestions', // Add your GitHub repo URL here
     },
     {
       id: 5,

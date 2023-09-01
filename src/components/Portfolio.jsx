@@ -23,7 +23,7 @@ const Portfolio = ({ darkMode, toggleDarkMode }) => {
     {
       id: 3,
       src: navbar,
-      demoLink: 'https://example.com/portfolio-item-3', // Add your demo URL here
+      demoLink: 'https://education-two-liard.vercel.app/', // Add your demo URL here
       codeLink: 'https://github.com/ankitdehariya19/education', // Add your GitHub repo URL here
     },
     {

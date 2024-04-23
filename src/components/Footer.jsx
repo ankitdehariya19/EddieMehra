@@ -9,7 +9,7 @@ const Footer = ({ darkMode }) => {
     >
       <div className="flex justify-center items-center">
         <a
-          href="https://github.com/ankitdehariya19" // Replace with your GitHub profile link
+          href="https://github.com/ankitdehariya19" 
           target="_blank"
           rel="noopener noreferrer"
           className="mr-4"
@@ -17,14 +17,14 @@ const Footer = ({ darkMode }) => {
           <FaGithub size={24} />
         </a>
         <a
-          href="https://linkedin.com/in/ankit-dehariya-27571b271" // Replace with your LinkedIn profile link
+          href="https://linkedin.com/in/ankit-dehariya-27571b271"
           target="_blank"
           rel="noopener noreferrer"
           className="mr-4"
         >
           <FaLinkedin size={24} />
         </a>
-        <a href="mailto: mr.ankitdehariya000@gmail.com" className="mr-4"> {/* Replace with your email address */}
+        <a href="mailto: mr.ankitdehariya000@gmail.com" className="mr-4"> 
           <HiOutlineMail size={24} />
         </a>
       </div>

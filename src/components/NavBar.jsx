@@ -64,16 +64,6 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
-
-      {/* <button
-        className={`cursor-pointer w-12 h-12 rounded-full flex items-center justify-center ${
-          darkMode ? 'bg-white text-black' : 'bg-black text-white'
-        }`}
-        onClick={toggleDarkMode}
-      >
-        {darkMode ? '☀️' : '🌙'}
-      </button> */}
-
       {nav && (
         <ul className=' -z-50 flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500'>
           {links.map((link) => (

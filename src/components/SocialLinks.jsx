@@ -12,7 +12,7 @@ const SocialLinks = ({ darkMode }) => {
           LinkedIn <FaLinkedin size={20} />
         </>
       ),
-      href: 'https://linkedin.com/in/ankit-dehariya-27571b271', // Replace with your LinkedIn profile link
+      href: 'https://linkedin.com/in/ankit-dehariya-27571b271',
       style: 'rounded-tr-md',
     },
     {
@@ -22,7 +22,7 @@ const SocialLinks = ({ darkMode }) => {
           GitHub <FaGithub size={20} />
         </>
       ),
-      href: 'https://github.com/ankitdehariya19', // Replace with your GitHub profile link
+      href: 'https://github.com/ankitdehariya19', 
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const SocialLinks = ({ darkMode }) => {
           Mail <HiOutlineMail size={20} />
         </>
       ),
-      href: 'mailto: mr.ankitdehariya000@gmail.com', // Replace with your email address
+      href: 'mailto: mr.ankitdehariya000@gmail.com', 
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const SocialLinks = ({ darkMode }) => {
           Resume <BsFillPersonLinesFill size={20} />
         </>
       ),
-      href: '/resume.pdf', // Replace with the path to your resume PDF
+      href: '/resume.pdf', 
       style: 'rounded-br-md',
       download: true,
       target: '_blank',

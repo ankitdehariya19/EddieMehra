@@ -7,7 +7,7 @@ const Button = ({ text, darkMode, onClick, onReset }) => {
       onClick();
     }
 
-    console.log('Button clicked'); // Log the click event
+    console.log('Button clicked'); 
 
     if (onReset) {
       onReset();

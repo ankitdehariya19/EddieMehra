@@ -38,14 +38,6 @@ Thank you for visiting my portfolio website. I am thrilled to share my journey a
 If you'd like to connect or learn more about my work, feel free to reach out through the contact details provided on this website. Let's create something extraordinary together!
         </p>
       </div>
-      {/* <button
-        className={`fixed bottom-4 right-4 text-sm ${
-          darkMode ? 'bg-white text-gray-800' : 'bg-black text-white'
-        } px-3 py-1 rounded-md`}
-        onClick={toggleDarkMode}
-      >
-        {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-      </button> */}
     </div>
   );
 };

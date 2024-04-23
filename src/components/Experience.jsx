@@ -20,63 +20,63 @@ const Experience = ({ darkMode, toggleDarkMode }) => {
         src: html,
         title: "HTML",
         lightModeStyle: "shadow-orange-500",
-        darkModeStyle: "shadow-orange-300", // Adjust this class for dark mode
+        darkModeStyle: "shadow-orange-300",
       },
       {
         id: 2,
         src: css,
         title: "CSS",
         lightModeStyle: "shadow-blue-500",
-        darkModeStyle: "shadow-blue-300", // Adjust this class for dark mode
+        darkModeStyle: "shadow-blue-300",
       },
       {
         id: 3,
         src: javascript,
         title: "JAVASCRIPT",
         lightModeStyle: "shadow-yellow-500",
-        darkModeStyle: "shadow-yellow-300", // Adjust this class for dark mode
+        darkModeStyle: "shadow-yellow-300", 
       },
       {
         id: 4,
         src: react,
         title: "ReactJS",
         lightModeStyle: "shadow-blue-600",
-        darkModeStyle: "shadow-blue-400", // Adjust this class for dark mode
+        darkModeStyle: "shadow-blue-400",
       },
       {
         id: 5,
         src: nextjs,
         title: "NextJs",
         lightModeStyle: "shadow-gray-500",
-        darkModeStyle: "shadow-gray-600", // Adjust this class for dark mode
+        darkModeStyle: "shadow-gray-600", 
       },
       {
         id: 6,
         src: tailwind,
         title: "TAILWIND",
         lightModeStyle: "shadow-sky-400",
-        darkModeStyle: "shadow-sky-400", // Adjust this class for dark mode
+        darkModeStyle: "shadow-sky-400", 
       },
       {
         id: 7,
         src: bootstrap,
         title: "Bootstrap",
         lightModeStyle: "shadow-purple-800",
-        darkModeStyle: "shadow-purple-600", // Adjust this class for dark mode
+        darkModeStyle: "shadow-purple-600", 
       },
       {
         id: 8,
         src: github,
         title: "Github",
         lightModeStyle: "shadow-gray-800",
-        darkModeStyle: "shadow-gray-200", // Adjust this class for dark mode
+        darkModeStyle: "shadow-gray-200", 
       },
       {
         id: 9,
         src: scss,
         title: "Scss",
         lightModeStyle: "shadow-pink-400",
-        darkModeStyle: "shadow-pink-300", // Adjust this class for dark mode
+        darkModeStyle: "shadow-pink-300",
       },
   ];
 
